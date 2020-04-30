@@ -21,26 +21,38 @@ final bgcolor = const Color(0xFF48154d);
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
-                TextFormField(decoration: const InputDecoration(
-                   hintText: 'Enter your email',
-                   contentPadding: EdgeInsets.only(left : 30.0),
-                )
-                ,),
+               
+                  Image.asset('assets/images/logo.png',
+                  width: 152,
+                  height: 136,),
+                Container(
+                  width: 285.0,
+                  height: 37,
+                  child:  TextFormField(decoration: const InputDecoration(
+                   hintText: 'Adress Email',
+                   
+                ),
+                ),
+                ),
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 16.0),
                 ),
-                TextFormField(decoration: const InputDecoration(
-                   hintText: 'Enter your password',
-                  contentPadding: EdgeInsets.only(left : 30.0),
+                Container(
+                  width: 285.0,
+                  height: 37.0,
+                  child:  TextFormField(decoration: const InputDecoration(
+                   hintText: 'Mot de passe',
                    
-                )
-                ,),
+                ),
+                ),
+                ),
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 6.0),
                 ),
                 Text("Mot de passe oublier",
                // overflow: TextOverflow.ellipsis,
                 textAlign: TextAlign.start,
+                
 
                 style: TextStyle(color: Colors.red.withOpacity(1.0)),
                 ),
@@ -68,7 +80,9 @@ final bgcolor = const Color(0xFF48154d);
                     
                     child: const Text(
                       'Connexion',
-                      style: TextStyle(fontSize: 17)
+                      style: TextStyle(fontSize: 17,
+                      fontWeight: FontWeight.normal
+                      )
                     ),
                   ),
                 ),
