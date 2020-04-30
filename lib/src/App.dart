@@ -16,15 +16,49 @@ final bgcolor = const Color(0xFF48154d);
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold( 
-          body: Center(
+          body: Container(
             
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
-               
+               Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 30.0),
+                ),
                   Image.asset('assets/images/logo.png',
                   width: 152,
                   height: 136,),
+                  Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 12.0),
+                ),
+                  Container(
+                    width: 110,
+                    child: Center(
+                      
+                      child: Column(
+                        children: <Widget>[
+                          Text("Bienvenu",
+                        style: TextStyle(color: Colors.red.withOpacity(1.0),
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
+                        ),
+                      ),
+                      Text("Connecter pour commencer",
+                        textAlign: TextAlign.center,
+                        
+                        style: TextStyle(color: Colors.grey.withOpacity(1.0),
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                        ),
+                      ),
+                        ],
+                       
+                      ),
+                      
+                    ),
+                  ),
+                  Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 35.0),
+                ),
                 Container(
                   width: 285.0,
                   height: 37,
@@ -47,7 +81,7 @@ final bgcolor = const Color(0xFF48154d);
                 ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 6.0),
+                  padding: const EdgeInsets.symmetric(vertical: 3.0),
                 ),
                 Text("Mot de passe oublier",
                // overflow: TextOverflow.ellipsis,
@@ -86,6 +120,36 @@ final bgcolor = const Color(0xFF48154d);
                     ),
                   ),
                 ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 60.0),
+                ),
+                  Container(
+                    
+                    child: Center(
+                      
+                      child: Column(
+                        children: <Widget>[
+                          Text("Vous n'avez pas un compte ?",
+                          textAlign: TextAlign.center,
+                        style: TextStyle(color: Colors.grey.withOpacity(1.0),
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                        ),
+                      ),
+                      Text("Inscrier-vous",
+                        textAlign: TextAlign.center,
+                        
+                        style: TextStyle(color: Colors.red.withOpacity(1.0),
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                        ),
+                      ),
+                        ],
+                       
+                      ),
+                      
+                    ),
+                  ),
                 
               ],
             ),
