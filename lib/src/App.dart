@@ -95,18 +95,32 @@ final bgcolor = const Color(0xFF48154d);
                   padding: const EdgeInsets.symmetric(vertical: 20.0),
                 ),
                 RaisedButton(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(18.0),
+                    side: BorderSide(color: Colors.red)),
+                  onPressed: () {},
+                  color: Colors.red,
+                  textColor: Colors.white,
+                  child: Text("Buy now".toUpperCase(),
+                    style: TextStyle(fontSize: 14)),
+                ),
+                Text ("Nasims text",style: TextStyle(color: Color(0xFF48154d) )),
+
+                RaisedButton(
                   onPressed: () {},
                   textColor: Colors.white,
                   padding: const EdgeInsets.all(0.0),
+                  
                   child: Container(
+                    
                     decoration: const BoxDecoration(
                       gradient: LinearGradient(
                         colors: <Color>[
                           Color(0xFF930F5B),
                           Color(0xFF48154D),
-                          
                         ],
                       ),
+                      
                     ),
                     padding: EdgeInsets.only(left : 110.0,right: 110.0,top: 13.0,bottom: 13.0),
                     
